@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    color: orangered;
+    text-shadow: 0 0 25px orangered;
+    transform: scale(1.1);
+}
+
+span {
+    color: orangered;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    text-decoration: none;
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    background-color: orangered; 
+    color: white; 
+}
+
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* This will space the content evenly */
+    padding: 30px 12%;
+}
+
+.home-content {
+    max-width: 600px; 
+    margin-right: 30px; /* Spacing between text and image */
+}
+
+.img-box {
+    flex-shrink: 0; /* Prevent the image box from shrinking */
+}
+
+.img-box img {
+    border-radius: 50%;
+    width: 100%; 
+    max-width: 400px; /* Set a max-width for the image */
+    height: auto; 
+}
+
+.home-content h3 {
+    font-size: 42px; /* Adjust as needed */
+}
+
+.home-content h1 {
+    font-size: 62px; /* Adjust as needed */
+}
+
+.home-content p {
+    font-size: 18px; /* Keep this consistent */
+    margin: 25px 0 30px; 
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    background: black;
+}
+
+.about-img img {
+    width: 100%; 
+    max-width: 550px; 
+    border-radius: 50%;
+    box-shadow: 0 0 25px orangered, 0 0 50px orangered;
+    height: auto; 
+}
+
+.about-content h2 {
+    font-size: 42px;
+    color: white;
+}
+
+.about-content h3 {
+    font-size: 62px;
+    color: white;
+}
+
+.about-content p {
+    color: white;
+    font-size: 20px;
+    margin: 2em 0 3em;
+}
+
+.container {
+    max-width: 1200px; 
+    margin: auto;
+    padding: 0 12%;
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+#projects {
+    background-color: #f9f9f9; 
+    padding: 50px 0;
+}
+
+.row {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;        
+    margin: 0 -15px;      
+}
+
+
+.card {
+    flex: 1;                      
+    max-width: 300px;              
+    margin: 15px;                  
+    background-color: white;      
+    border-radius: 8px;       
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    overflow: hidden;           
+    transition: transform 0.3s;    
+}
+
+.card:hover {
+    transform: translateY(-5px);   
+}
+
+.card img {
+    width: 100%;                  
+    height: auto;                 
+}
+
+.card-body {
+    padding: 15px;               
+    display: flex;               
+    flex-direction: column;       
+    align-items: center;         
+    justify-content: space-between; 
+}
+
+.card-text {
+    font-size: 16px;            
+    color: #333;                  
+    text-align: center;          
+    margin-bottom: 15px;       
+
+}
+.btn {
+    padding: 15px 30px; 
+    font-size: 16px;
+    background-color: orangered;
+    color: white;
+    border: none; 
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-1:hover {
+    background-color: darkorange; 
+}
+#contact-form {
+    padding: 50px 12%;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box h4 {
+    text-align: left; 
+    margin-bottom: 5px; 
+}
+
+
+.input-box input,
+.input-box textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.8);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+    
+}
+
+.input-box input:focus,
+.input-box textarea:focus {
+    border-color: orangered; 
+    outline: none; 
+}
+
+textarea {
+    resize: vertical; 
+    min-height: 150px; 
+}
+
+.btn-1 {
+    padding: 15px 30px; 
+    font-size: 16px;
+    background-color: orangered;
+    color: white;
+    border: none; 
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-1:hover {
+    background-color: darkorange; 
+}
+
+.footer {
+    padding: 40px 0;
+    background-color: black;
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+
+.footer .social a {
+    font-size: 24px;
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    transition: 0.3s ease;
+}
+
+.footer .social a:hover {
+    transform: scale(1.2);
+    color: orangered;
+}
+
+.footer ul {
+    padding: 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.footer ul li {
+    display: inline; 
+    margin: 0 15px; 
+}
+
+.footer ul li a {
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+    text-decoration: none; 
+}
+
+.footer ul li a:hover {
+    border-bottom: 3px solid orangered;
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
